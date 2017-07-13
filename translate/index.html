@@ -34,8 +34,7 @@ var timeoutID=0;
 function LoadPage(){
 window.document.location.reload();
 }
-function Timer(){
-timeoutID = window.setTimeout("LoadPage()",30000);
+function Timer(s){
+timeoutID = window.setTimeout("LoadPage()", s*1000);
 }
-Timer();
 </script>
